@@ -7,7 +7,12 @@
  * Ricardo Franco - 13261
  */
 import java.io.IOException;
-
+/*
+* Esta clase se utiliza para el manejo de los grafos, para encontrar las distancias entre ciudades y el centro del grafo
+* todo esto utilizando objetos de tipo archivo para la lectura del fichero creado y las listas se tomo de referencia
+* el código encontrado en el siguiente link:
+* https://code.google.com/p/java-algorithms-implementation/feeds
+*/
 public class Grafo {
     Archivo a= new Archivo();
     InterfazGrafo D;
@@ -15,10 +20,10 @@ public class Grafo {
     int[] max;
     int centro;
     int minimo=10000;
-    
+// Lectura del grrafo para obtener los datos de las ciudades con sus respectivas distancias
     public Grafo(){
-        
         try {
+// Se mandan a llamar a los metodos creados en la clase Archivo
             a.obtenerArchivo();
             a.arregloNombres();
             D = a.matrizCostos();
