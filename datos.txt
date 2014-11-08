@@ -1,0 +1,5 @@
+Guatemala Peten 80
+Guatemala Solola 30
+Guatemala Totonicapan 40
+Solola Peten 75
+Peten Altaverapaz 25
